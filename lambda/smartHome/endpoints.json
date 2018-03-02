@@ -1,0 +1,112 @@
+    [
+        {
+            "handler": "humidifier_handler",
+            "endpoint": {
+                "endpointId": "endpoint-001",
+                "manufacturerName": "Sample Manufacturer",
+                "friendlyName": "dabble",
+                "description": "hudimifier can be turned on/off",
+                "displayCategories": [
+                    "SWITCH"
+                ],
+                "cookie": {},
+                "capabilities": [
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.PowerController",
+                        "version": "3",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "powerState"
+                                }
+                            ],
+                            "proactivelyReported": false,
+                            "retrievable": true
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa",
+                        "version": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "handler": "backlight_handler",
+            "endpoint": {
+                "endpointId": "endpoint-002",
+                "manufacturerName": "Sample Manufacturer",
+                "friendlyName": "dabble backlight",
+                "description": "this is the backlight of humidifier",
+                "displayCategories": [
+                    "LIGHT"
+                ],
+                "cookie": {},
+                "capabilities": [
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.PowerController",
+                        "version": "3",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "powerState"
+                                }
+                            ],
+                            "proactivelyReported": false,
+                            "retrievable": true
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.ColorController",
+                        "version": "3",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "color"
+                                }
+                            ],
+                            "proactivelyReported": false,
+                            "retrievable": true
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.ColorTemperatureController",
+                        "version": "3",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "colorTemperatureInKelvin"
+                                }
+                            ],
+                            "proactivelyReported": false,
+                            "retrievable": false
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.BrightnessController",
+                        "version": "3",
+                        "properties": {
+                            "supported": [
+                                {
+                                    "name": "brightness"
+                                }
+                            ],
+                            "proactivelyReported": false,
+                            "retrievable": true
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa",
+                        "version": "3"
+                    }
+                ]
+            }
+        }
+    ]

@@ -1,0 +1,28 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "",
+          "name": "huimifier-test",
+          "description": ""
+        }
+      }
+    },
+    "apis": {
+      "smartHome": {
+        "endpoint": {
+          "sourceDir": "lambda\\smartHome"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": ""
+        }
+      }
+    }
+  }
+}
